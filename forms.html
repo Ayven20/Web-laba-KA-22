@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style-forms.css">
+    <link rel="shortcut icon" href="./img/sun.webp" type="image/x-icon">
+</head>
+
+<body>
+    <form class="contact-form" action="#" method="get">
+        <h1 class="name">Registration form</h1>
+
+        <label for="user-name-id">Your name</label>
+
+        <input
+         type="text" 
+         name="user-name" 
+         class="form-field" 
+         id="user-name-id"
+         placeholder="Type your name"
+         required
+         pattern="[a-zA-Z]{4,8}"
+        >
+        
+        <select class="form-field" >
+            <option value="">male</option>
+            <option value="">female</option>
+        </select>
+        
+        <label class="margin1">
+            Your Email
+            <input 
+                type="email" 
+                name="user-email" 
+                id="user-email-id"
+                class="form-field"
+                placeholder="Type your email"
+            >
+        </label>
+
+        <label class="margin1">
+            Enter password
+            <input 
+                type="password" 
+                name="user-pass" 
+                id="user-pass-id"
+                class="form-field"
+            >
+        </label>
+
+        <label class="margin1">
+            Your Age
+            <input 
+                type="number" 
+                name="user-age" 
+                id="user-age-id"
+                class="form-field"
+                placeholder="Type your age"
+                min="6"
+                max="100"
+            >
+        </label>
+
+        <label class="margin1">
+            Your Birthday
+            <input 
+                type="date" 
+                name="user-birthday" 
+                id="user-birthday-id"
+                class="form-field"
+                min="1930-01-01"
+                max="2024-12-06"
+            >
+        </label>
+
+        <label class="file-choose">
+            Add your photo for profile
+            <input 
+                type="file"
+            >
+        </label>
+
+
+        <p class="margin1">Tell us a bit about yourself</p>
+        <textarea placeholder="Type something about your preferences"
+            rows="4"
+            class="form-field"></textarea>
+
+        <fieldset class="margin1">
+            <legend> Most deliveries up to:</legend>
+
+            <label class="list">
+                <input type="checkbox" name="color" checked>
+                city
+            </label>
+
+            <label class="list">
+                <input type="checkbox" name="color">
+                outskirt
+            </label>
+
+            <label class="list">
+                <input type="checkbox" name="color">
+                village
+            </label>
+        </fieldset>
+
+
+        <div class="form-controls">
+            <input type="submit" value="SEND" class="button-control">
+            <input type="reset" value="RESET" class="button-control">
+        </div>
+
+    </form>
+</body>
+</html>

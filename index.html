@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFood</title>
+    <link rel="shortcut icon" href="./img/sun.webp" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" 
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href=".forms.html">
+    <link rel="stylesheet" href="./css/background.css">
+
+</head>
+
+
+<body>
+    <header class="page-header">
+    <div class="container">
+        <a href="index.html" class="logo">
+            <img src="./img/sun.webp" 
+            alt="Sun" 
+            width="50" 
+            height="50">
+            
+            E<span>Food</span>
+        </a>
+
+        <nav class="page-nav">
+            <ul class="main-menu">
+                <li class="main-menu_item">
+                    <a href="#" class="main-menu_link main-menu_link--current"> Home </a>
+                </li>
+
+                <li class="main-menu_item">
+                    <a href="#top-food" class="main-menu_link"> Top food </a>
+                </li>
+
+                <li class="main-menu_item">
+                    <a href="#client-testimonials" class="main-menu_link"> Service </a>
+                </li>
+
+                <li class="main-menu_item">
+                    <a href="#footer" class="main-menu_link"> Contacts </a>
+                </li>
+            </ul>
+        </nav>
+
+        <a href="#" class="page-header_search">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="11.7666" cy="11.8408" rx="8.98856" ry="8.88424" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.0183 18.4814L21.5423 21.9555" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+        <a href="#" class="page-header_cart">
+            <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1.17578L3.08 1.5316L4.04301 12.8715C4.12001 13.7976 4.90301 14.5082 5.84301 14.5053H16.752C17.649 14.5072 18.41 13.8549 18.537 12.9772L19.486 6.49532C19.592 5.77083 19.083 5.09872 18.351 4.99395C18.287 4.98505 3.414 4.98011 3.414 4.98011" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M12.375 8.63337H15.1479" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.4043 17.9316C5.70527 17.9316 5.94824 18.1729 5.94824 18.4696C5.94824 18.7673 5.70527 19.0085 5.4043 19.0085C5.10333 19.0085 4.86035 18.7673 4.86035 18.4696C4.86035 18.1729 5.10333 17.9316 5.4043 17.9316Z" fill="#363853" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6846 17.9316C16.9856 17.9316 17.2296 18.1729 17.2296 18.4696C17.2296 18.7673 16.9856 19.0085 16.6846 19.0085C16.3836 19.0085 16.1406 18.7673 16.1406 18.4696C16.1406 18.1729 16.3836 17.9316 16.6846 17.9316Z" fill="#363853" stroke="#363853" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <button class="sign-up" type="button" onclick="openNewPage()">Sign up</button>
+        <script>
+            function openNewPage() {
+                window.location.href = 'forms.html';
+            }
+        </script>
+    </div>
+    </header> 
+
+<main>
+
+   <section class="excellents">
+        <div class="container excellents__container">
+            <img src="./img/food_delivery.png" 
+            alt="Photo of man bringing delivery"
+            class="excellents__"
+            width="626" 
+            height="723"
+            >
+
+            <div class="excellents_wrapper">
+                <h2 class="section_title">
+                    <span class="section-title__accent">Stay</span>
+                     at home, we will Provide 
+                     <span class="section-title__accent">good food</span> 
+                </h2>
+
+                <p class="excellents_desc">
+                    We provide tasty food and superfast delivery at your home.  
+                    Let’s use our services right now and get discounts of up to 50%.
+                </p>
+                
+                <ul class="excellents_list">
+                    <li class="excellents_item excellent__item--fast">
+                        Fasted delivery in 30 Minutes
+                    </li>
+
+                    <li class="excellents_item  excellent__item--workers">
+                        300+ delivery men
+                    </li>
+
+                    <li class="excellents_item  excellent__item--rest">
+                        500+ restaurant & cafe shop
+                    </li>
+                </ul>
+
+                <a href="#" class="excellents_more">See more</a>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+    <section class="top-food" id="top-food">
+        <div class="container">
+            <h2 class="h2-top-food">
+                Top Food<span> Restaurant</span>
+            </h2>
+        <ul class="list-food">
+
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Pizza1.png"
+                alt="Image of food item" 
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> Blaze pizza </a>
+
+                <p class="text-item"> 
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg" 
+                    alt="clock icon"
+                    width="22" 
+                    height="22">
+                    11.00 AM - 10.00 PM 
+                    
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>   
+            </li>
+
+
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Burger1.png"
+                alt="Image of food item"  
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> Royel Burger </a>
+
+                <p class="text-item">
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg" 
+                    alt="clock-icon" 
+                    width="22" 
+                    height="22">
+                    11.00 AM - 10.00 PM 
+
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>
+            </li>
+
+
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Pizza2.png"
+                alt="Image of food item"  
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> Pizza ranch </a>
+
+                <p class="text-item">
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg"
+                    alt="clock-icon" 
+                    width="22" 
+                    height="22">
+                    09.00 AM - 10.00 PM 
+
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>
+            </li>
+
+
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Potato.png" 
+                alt="Image of food item" 
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> KFC Restaurant </a>
+
+                <p class="text-item">
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg" 
+                    alt="clock-item" 
+                    width="22" 
+                    height="22">
+                    09.00 AM - 10.00 PM 
+
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>
+            </li>
+
+
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Pizza3.png" 
+                alt="Image of food item" 
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> Dion`s Pizza Hut </a>
+                
+                <p class="text-item"> 
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg" 
+                    alt="clock-icon" 
+                    width="22" 
+                    height="22">
+                    10.00 AM - 12.00 PM 
+
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>
+            </li>
+            
+
+            
+            <li class="food-item">
+                <img class="food-item-image" 
+                src="./img/Burger2.png"
+                alt="Image of food item"  
+                width="361" 
+                height="299">
+
+                <br>
+                <a class="food-name" href="#"> Star Food </a>
+
+                <p class="text-item">
+                    <img class="clock-icon" 
+                    src="./img/clock-icon.svg"
+                    alt="clock-icon"  
+                    width="22" 
+                    height="22">
+                    10.00 AM - 12.00 PM 
+
+                    <button class="see-more-list" type="button">&#8594;</button>
+                </p>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+
+    <section id="client-download">
+        <div class="download-container">
+            <div class="download-text">
+                <h2>
+                    Download Our <br> <span class="download-highlight">Mobile App</span>
+                </h2>
+
+                <p> It's all at your fingertips - the restaurants you love. Find the right food to suit your mood, and make the first bite last. Go ahead, download app and get 50% discount </p>
+                
+                <div class="download-buttons">
+
+                <a href="#" class="app-store">
+                    <img src="./img/download-on-the-app-store.svg" 
+                    alt="App Store">
+                </a>
+
+                <a href="#" class="google-play">
+                    <img src="./img/google-play-badge-2022-2.svg" 
+                    alt="Google Play">
+                </a>
+                </div>
+            </div>
+
+            <div class="download-images">
+                <img class="phone-left" 
+                src="./img/phone-left.png" 
+                alt="phone left">
+
+                <img class="phone-center" 
+                src="./img/phone-center.png" 
+                alt="phone center">
+
+                <img class="phone-right" 
+                src="./img/phone-right.png" 
+                alt="phone right">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="client-testimonials" id="client-testimonials">
+        <div class="container">
+            <h2 class = "text-h2-client">
+                What Our Client Are <span class="highlight">Saying</span>
+            </h2>
+
+            <div class="testimonial-container">
+                <img src="./img/example-client.jpg" 
+                alt="Client photo" 
+                class="client-photo">
+
+                <section class="testimonial-content">
+                    <p> EFood has the most intriguing food order system in the country. UI in both their app and web is very simple and easy to use, enhancing the UX. Their delivery men are also quite professional and know the neighborhood well. Till now I never had to guide them to my address for delivery. </p>
+                    
+                    <h3>Anglina Jole</h3>
+                    <p class="role">Food lover</p>
+                
+                    <div class="testimonial-buttons">
+                        <button class="prev">←</button>
+                        <button class="next">→</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </section>
+      
+
+    <section class="form" id="form">
+        <h1 class="main-text">
+            Subscribe to get the Latest Offer
+        </h1>
+
+        <p class="just-text">
+            Get our daily updates by subscribing to our newspaper, please drop your email below
+        </p>
+
+        <form class="form-email">
+            <label class="pole">
+                <input 
+                    type="email" 
+                    name="user-email" 
+                    id="user-email-id"
+                    class="form-field"
+                    placeholder="Enter your email address"
+                >
+            </label>
+
+            <button type="submit" class="button-subscribe"> 
+                <img 
+                src="img/Frame.svg" 
+                class="icon-subscribe"
+                alt="" 
+                width="16" 
+                height="16">
+                Subscribe </button>
+        </form>
+    </section>
+
+
+    <footer class="footer" id = "footer">
+        <section class="contact-info">
+            <a href="index.html" class="logo">
+                <img src="./img/sun.webp" 
+                alt="Sun" 
+                width="50" 
+                height="50">
+                E<span>Food</span>
+            </a>
+
+            <ul class="ull-footer">
+                <li class="contact-items item--map"> 
+                    <a href="https://www.google.com/maps/place/Dhaka,+Bangladesh" target="_blank">
+                        Dhaka, Bangladesh</a>
+                </li>
+
+                <li class="contact-items item--phone"> 
+                    0943833399
+                </li>
+
+                <li class="contact-items item--email"> 
+                    support@efood.com
+                </li>
+            </ul>
+
+            <div class="social-networks">
+                <a class="logo-items item--facebook" 
+                    href="https://www.facebook.com">
+                </a>
+
+                <a class="logo-items item--twitter" 
+                    href="https://x.com">
+                </a>
+
+                <a class="logo-items item--insta" 
+                    href="https://www.instagram.com">
+                </a>
+
+                <a class="logo-items item--pinterest" 
+                    href="https://www.pinterest.com">
+                </a>
+            </div>
+
+        </section>
+
+        <section class="footer-links">
+            <div class="footer-section">
+                <h4 class="h4-footer" >Service</h4>
+
+                <ul class="ul-footer">
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            How in works </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Home delivery </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Products </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Menu</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Company</h4>
+
+                <ul class="ul-footer">
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            About Us </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            News </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Our trusted partner </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Our trusted partner </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            New users FAQ </a>
+                    </li>
+                </ul>
+            </div>  
+
+
+            <div class="footer-section">
+                <h4>Supports</h4>
+
+                <ul class="ul-footer">
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Help center </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Feedback </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Contact Us </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Terms and Conditions </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="footer-section">
+                <h4>Resources</h4>
+
+                <ul class="ul-footer">
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Download app </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Blog </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            What's new </a>
+                    </li>
+
+                    <li class = "list-footer">
+                        <a class="a-footer" href="#">
+                            Sitemap </a>
+                    </li>
+                </ul>
+            </div> 
+        </section>
+    </footer>
+
+ 
+<section class="rights">
+    <p class="rights-p"> &copy; 2021 EFood - All right reserved</p>
+
+    <ul class="ul-rights">
+        <li class="rights-list">
+            <a href="#" class="rights-a"> Privacy </a>
+        </li>
+
+        <li class="rights-list">
+            <a href="#" class="rights-a"> Security </a>
+        </li>
+
+        <li class="rights-list">
+            <a href="#" class="rights-a"> Terms </a>
+        </li>
+    </ul>
+</section>
+
+</main>
+</body>
+</html>
